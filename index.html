@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101018">
+  <meta name="description" content="A structured, beginner-friendly academy for bartending and mixology.">
+  <title>Mixology Academy</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">✦</span> MIXOLOGY <b>ACADEMY</b></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#foundations">Foundations</a><a href="#glassware">Glassware</a>
+      <a href="#spirits">Spirits</a><a href="#wines">Wines</a><a href="#beer">Beer</a><a href="#syrups">Syrups</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE COMPLETE BEGINNER'S GUIDE</p>
+        <h1>Learn the craft.<br><em>Master the bar.</em></h1>
+        <p>Build your knowledge from the foundations of bartending to spirits, classic cocktails, wines, beer and syrups.</p>
+        <div class="hero-actions"><a class="btn primary" href="#foundations">Start learning</a><a class="btn secondary" href="#spirits">Explore spirits</a></div>
+        <div class="hero-note">A practical learning resource · Beginner to intermediate</div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="glass-art"><span></span></div><div class="art-label">CRAFT<br> & CULTURE</div></div>
+    </section>
+    <section class="toolbar">
+      <div><span class="eyebrow">YOUR LEARNING LIBRARY</span><h2>Explore the curriculum</h2></div>
+      <label class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search topics, spirits, cocktails…"></label>
+    </section>
+    <div id="searchResults" class="search-results" hidden></div>
+    <section id="foundations" class="section">
+      <div class="section-heading"><div><p class="eyebrow">01 / START HERE</p><h2>Foundations of bartending</h2></div><p>Understand the profession, the tools, the language and the drinks before you begin mixing.</p></div>
+      <div id="foundationGrid" class="topic-grid"></div>
+    </section>
+    <section id="glassware" class="section dark-section">
+      <div class="section-heading"><div><p class="eyebrow">02 / PRESENTATION</p><h2>Glassware</h2></div><p>The right glass supports aroma, temperature, carbonation, presentation and the intended serving size.</p></div>
+      <div id="glassGrid" class="glass-grid"></div>
+      <p class="small-note">Glass capacity varies by manufacturer and venue. Always follow the house standard and leave appropriate room for ice and garnish.</p>
+    </section>
+    <section id="spirits" class="section">
+      <div class="section-heading"><div><p class="eyebrow">03 / THE SPIRIT WORLD</p><h2>Distilled spirits</h2></div><p>Learn what each spirit is, how it is produced, its styles, examples, familiar brands and classic cocktails.</p></div>
+      <div class="filter-row" id="spiritFilters"></div>
+      <div id="spiritList" class="spirit-list"></div>
+    </section>
+    <section id="wines" class="section wine-section">
+      <div class="section-heading"><div><p class="eyebrow">04 / GRAPE TO GLASS</p><h2>Wines</h2></div><p>Wine styles are shaped by grape variety, growing conditions, fermentation, ageing and production choices.</p></div>
+      <div id="wineGrid" class="wine-grid"></div>
+    </section>
+    <section id="beer" class="section dark-section">
+      <div class="section-heading"><div><p class="eyebrow">05 / BREWING</p><h2>Beer</h2></div><p>Beer is brewed from malted grain, water, hops and yeast. Different methods create distinct families and flavours.</p></div>
+      <div id="beerContent" class="beer-layout"></div>
+    </section>
+    <section id="syrups" class="section">
+      <div class="section-heading"><div><p class="eyebrow">06 / SWEETNESS & BALANCE</p><h2>Syrups</h2></div><p>Syrups add sweetness, flavour, texture and consistency. Measure carefully so a drink stays balanced.</p></div>
+      <div id="syrupGrid" class="syrup-grid"></div>
+    </section>
+    <section class="section responsible">
+      <p class="eyebrow">PROFESSIONAL STANDARD</p><h2>Responsible service is part of the craft.</h2>
+      <p>Know and follow local licensing laws, venue policy and legal drinking-age requirements. Never serve an intoxicated guest or encourage excessive consumption. Offer water and non-alcoholic choices, arrange safe transport where needed, and never drink while working.</p>
+    </section>
+  </main>
+  <footer><div class="brand">✦ MIXOLOGY <b>ACADEMY</b></div><p>Learn with curiosity. Serve with responsibility.</p><small>Educational material. Recipes are starting points; verify measurements, allergens and local rules.</small></footer>
+  <script src="content.js"></script><script src="app.js"></script>
+</body>
+</html>
